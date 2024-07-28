@@ -1,0 +1,312 @@
+/* src/styles/globals.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+/*Navbar customizations*/
+.navbar-custom {
+    background-color: #b9fe94;
+    /* Light grey background */
+    color: #333;
+    /* Dark text color */
+    padding: 0.1rem 5rem;
+    /* Add padding on all sides */
+    border-radius: 10px;
+    /* Add rounded corners */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #333;
+    /* Dark text color */
+    line-height: 10px;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #007bff;
+    /* Blue color on hover */
+}
+
+/*About page customizations*/
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.about-hero {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.about-hero h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.about-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-cta button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.about-cta button:hover {
+    background-color: #0056b3;
+}
+
+/*Contact Page Customizations*/
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.contact-hero {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.contact-hero h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.contact-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.contact-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*Products Grid Customization*/
+.products-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  .products-title {
+    padding: 2rem;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .table-custom {
+    font-size: 0.8rem;
+  }
+  
+  .table-custom th,
+  .table-custom td {
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+  }
+  
+  .table-custom th {
+    white-space: nowrap;
+  }
+  
+  .table-custom td {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: start;
+  }
+  
+  .button-no-outline {
+    background: none;
+    border: none;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-no-outline:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .product-hero {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .product-hero h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  
+  .add-product-button {
+    margin-bottom: 0.3rem;
+    margin-right: 0.2rem;
+  }
+
+  .refresh-product-button{
+    margin-bottom: 0.3rem;
+  }
+  
+  /*Global Modal Parameters*/
+  /* Adjust modal width */
+.custom-modal .modal-dialog {
+  max-width: 50%; /* Adjust the percentage as needed */
+}
+
+.action-btn-and-refresh {
+  display: flex;
+  justify-content: end;
+}
+
+.alert-content {
+  display: flex;
+  align-items: center; /* Vertically centers the items */
+  justify-content: center;
+  gap: 10px; /* Adds space between the spinner and text */
+}
+
+.loading-text {
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
